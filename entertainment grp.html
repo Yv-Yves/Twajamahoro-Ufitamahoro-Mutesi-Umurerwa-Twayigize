@@ -1,1 +1,141 @@
-entertainment grp.html
+entertainment form.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entertainment Booking Form</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      margin:0;
+    }
+
+    .container{
+      background:white;
+      width:420px;
+      padding:30px;
+      border-radius:12px;
+      box-shadow:0 0 15px rgba(0,0,0,0.3);
+    }
+
+    h2{
+      text-align:center;
+      color:#333;
+      margin-bottom:20px;
+    }
+
+    .input-group{
+      margin-bottom:15px;
+    }
+
+    label{
+      display:block;
+      margin-bottom:6px;
+      font-weight:bold;
+    }
+
+    input, select, textarea{
+      width:100%;
+      padding:10px;
+      border:1px solid #ccc;
+      border-radius:6px;
+      font-size:15px;
+    }
+
+    textarea{
+      resize:none;
+      height:80px;
+    }
+
+    .checkbox-group{
+      display:flex;
+      gap:15px;
+      margin-top:8px;
+    }
+
+    button{
+      width:100%;
+      padding:12px;
+      border:none;
+      background:#2575fc;
+      color:white;
+      font-size:16px;
+      border-radius:6px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#0d5be1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Entertainment Event Form</h2>
+
+    <form>
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
+      </div>
+
+      <div class="input-group">
+        <label>Select Entertainment Type</label>
+
+        <select required>
+          <option value="">Choose Option</option>
+          <option>Music Concert</option>
+          <option>Movie Night</option>
+          <option>Comedy Show</option>
+          <option>Dance Competition</option>
+          <option>Gaming Event</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>Preferred Date</label>
+        <input type="date" required>
+      </div>
+
+      <div class="input-group">
+        <label>Favorite Activities</label>
+
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Music</label>
+          <label><input type="checkbox"> Games</label>
+          <label><input type="checkbox"> Movies</label>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label>Additional Message</label>
+        <textarea placeholder="Write something..."></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
