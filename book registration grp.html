@@ -1,1 +1,125 @@
 book registration grp.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Registration Form</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f4f4;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      margin:0;
+    }
+
+    .container{
+      background:white;
+      width:450px;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 0 12px rgba(0,0,0,0.2);
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:25px;
+      color:#333;
+    }
+
+    .input-group{
+      margin-bottom:18px;
+    }
+
+    label{
+      display:block;
+      margin-bottom:6px;
+      font-weight:bold;
+    }
+
+    input, select, textarea{
+      width:100%;
+      padding:10px;
+      border:1px solid #ccc;
+      border-radius:5px;
+      font-size:15px;
+    }
+
+    textarea{
+      resize:none;
+      height:80px;
+    }
+
+    button{
+      width:100%;
+      padding:12px;
+      background:#28a745;
+      color:white;
+      border:none;
+      border-radius:5px;
+      font-size:16px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#1e7e34;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Book Registration Form</h2>
+
+    <form>
+
+      <div class="input-group">
+        <label>Book Title</label>
+        <input type="text" placeholder="Enter book title" required>
+      </div>
+
+      <div class="input-group">
+        <label>Author Name</label>
+        <input type="text" placeholder="Enter author name" required>
+      </div>
+
+      <div class="input-group">
+        <label>ISBN Number</label>
+        <input type="text" placeholder="Enter ISBN number" required>
+      </div>
+
+      <div class="input-group">
+        <label>Book Category</label>
+
+        <select required>
+          <option value="">Select Category</option>
+          <option>Education</option>
+          <option>Science</option>
+          <option>Technology</option>
+          <option>Novel</option>
+          <option>History</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>Publication Date</label>
+        <input type="date" required>
+      </div>
+
+      <div class="input-group">
+        <label>Description</label>
+        <textarea placeholder="Write book description..."></textarea>
+      </div>
+
+      <button type="submit">Register Book</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
